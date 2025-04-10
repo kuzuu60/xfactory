@@ -1,0 +1,187 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    text-align: center;
+    font-family: "Questrial", sans-serif;
+    background-color: #fefefe;
+}
+
+header{
+    color:white;
+    border: solid 1px red;
+    display:flex;
+    gap: 50px;
+    background-color: #111111;
+    /* justify-content: space-around; */
+    align-items: center;
+    padding: 20px;
+}
+.test123{
+    display: flex;
+    border: solid 1px pink;
+    padding: 10px;
+}
+
+.hbutton{
+    background-color: #FF7700;
+    border: none;
+    color: white;
+}
+
+header i{
+    color: white;
+}
+.primary-nav{
+    display: flex;
+    /* gap:700px; */
+    border: solid 1px blue;
+    width: 100%;
+    justify-content: space-between;
+}
+.primary-nav ul{
+    display:flex;
+    align-items: center;
+    gap: 15px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+h1{
+    font-size: 4.5rem;
+    line-height: 1.1; 
+   
+}
+@media (width <800px) {
+    .welder-bg h1 {
+        font-size: 2.2rem;
+    }
+}
+
+h2{
+    font-size: 2.5rem;
+}
+
+h3{
+    font-size: 1.75rem;
+}
+
+img{
+    display: block;
+    max-inline-size: 100%;
+}
+
+.welder-bg{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    color: white;
+    background-image: url("https://xtratheme.com/elementor/factory-2/wp-content/uploads/sites/88/2021/11/slide1.jpg");  
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    padding: 50px;
+}
+
+.wrapper{  
+    margin-inline: auto;
+}
+
+
+.welder-bg a{
+    display: flex;
+
+}
+
+.welder-in{
+    color: white;
+    padding: 30px;
+    background-image: url("https://xtratheme.com/elementor/factory-2/wp-content/uploads/sites/88/2021/10/bg1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.orange-txt{
+    color: #FF7700;
+}
+
+.org-bg{
+    display: inline-block;
+    color:#fff;
+    border: solid 1px #FF7700;
+    background-color: #FF7700;
+    padding: 10px;
+    cursor: pointer;
+    margin: 20px;
+}
+
+.org-bg:hover
+{
+    background-color: #111111;
+    border: #111111;
+}
+
+.box{
+    border: solid black 1px;
+    display: inline-block;
+    margin: 20px;
+    color: #fff;
+    background-color: #111111;
+}
+
+.Bottom{
+    display: flex;
+    color: white;
+    background-color: #111111;
+    align-items: center;
+    justify-content: space-around;
+    border: solid pink 1px;
+}
+
+.image-container{
+    border: solid 1px green; 
+    width: 60px;
+    position: relative;
+    left: 50%;
+    top: -30px;
+    transform: translate(-50%);
+}
+
+
+.Bottom ul {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    padding: 20px;
+    border: solid red 1px;
+}
+
+.Bottom i{
+    color: #fff;
+}
+
+footer{
+    display: flex;
+    color: white;
+    background-color: #1c1c1c;
+    justify-content: space-between;
+    padding: 10px;
+    padding-inline: 150px;
+    margin: 0;
+    margin-bottom: 70px;    
+}
+
+
+.secondary ul{
+    display: flex;
+    list-style: none;
+    gap: 15px;
+}
+  
+
