@@ -3,7 +3,6 @@
 }
 
 body{
-    text-align: center;
     font-family: "Questrial", sans-serif;
     background-color: #fefefe;
 }
@@ -18,16 +17,34 @@ header{
     align-items: center;
     padding: 20px;
 }
+
+.wrapper{
+    max-inline-size:1280px;  
+    margin-inline: auto;
+}
+
 .test123{
     display: flex;
     border: solid 1px pink;
     padding: 10px;
 }
 
+.test123 i:hover{
+    color: #FF7700;
+}
+
 .hbutton{
+    display: inline-block;
     background-color: #FF7700;
     border: none;
     color: white;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.hbutton:hover{
+    background-color: #fff;
+    color: #111111;
 }
 
 header i{
@@ -39,7 +56,9 @@ header i{
     border: solid 1px blue;
     width: 100%;
     justify-content: space-between;
+    align-items: center;
 }
+
 .primary-nav ul{
     display:flex;
     align-items: center;
@@ -47,8 +66,12 @@ header i{
     list-style: none;
     padding: 0;
     margin: 0;
+    cursor: pointer;
 }
 
+.primary-nav ul li:hover{
+    color: #FF7700;
+}
 
 h1{
     font-size: 4.5rem;
@@ -69,12 +92,17 @@ h3{
     font-size: 1.75rem;
 }
 
+p{
+    font-size: 18px;;
+}
+
 img{
     display: block;
     max-inline-size: 100%;
 }
 
 .welder-bg{
+    border: dotted purple 15px;
     display: flex;
     flex-direction: column;
     text-align: left;
@@ -85,12 +113,109 @@ img{
     background-size: cover;
     justify-content: center;
     padding: 50px;
+    margin-bottom: 60px;
 }
 
-.wrapper{  
-    margin-inline: auto;
+@media screen and (min-height: 800px) and (min-width: 1000px) {
+    .welder-bg {
+      height: 100vh;
+      padding: 0;
+    }
+  }
+
+.welder-bg button{
+    font-family: inherit;
+    background-color: #FF7700;
+    font-size: small ;
+    font-size: 10px;
+    border: none;
+    cursor: pointer;
 }
 
+
+.aa:hover{
+    background-color: #111111;
+}
+
+.aa a{
+    text-decoration: none;
+    color: #fefefe;
+    padding:5px;
+}
+
+.welder-bg .bb{
+     border: solid 1px #fff; 
+    background-color: transparent;
+}
+
+.welder-bg .bb:hover{
+    background-color: #111111;
+    border: none;
+}
+
+.bb a{
+    color: #fefefe;
+    text-decoration: none;
+    padding:5px;
+}
+
+.two-column-layout {
+    border: 1px solid #111111;
+    padding: 15px;
+    font-size: 18px;
+    display: grid;
+    gap: 60px;
+    line-height: 1.5;
+  }
+
+.abtimages{
+    display: flex;
+    gap: 30px;
+}  
+  
+  @media screen and (min-width: 821px) {
+    .two-column-layout {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  
+  @media screen and (max-width: 821px) {
+    .imgcontainer1, .img2 {
+      display: none;
+    }
+  }
+  
+
+
+
+.two-column-layout .imgcontainer1{
+    width: 350px;
+    height: 293.77px ;
+    border: #FF7700 solid;
+    transform: translateY(-120px);
+    
+}
+
+
+.img2{
+    width: 320px;
+    height: 369.35px;
+    transform: translateY(-50px);
+
+}
+
+.abtcompany{
+    border: #111111 solid;
+    margin-bottom: none;
+    padding: 20px;
+    line-height: 1.5;
+}
+
+.abtattributes {
+    gap: 30px;
+    display: flex;
+    list-style: none;
+}
 
 .welder-bg a{
     display: flex;
@@ -98,13 +223,14 @@ img{
 }
 
 .welder-in{
+    text-align: center;
     color: white;
     padding: 30px;
     background-image: url("https://xtratheme.com/elementor/factory-2/wp-content/uploads/sites/88/2021/10/bg1.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-
+    
 }
 
 .orange-txt{
@@ -127,13 +253,172 @@ img{
     border: #111111;
 }
 
+.testimonial{
+    text-align: center;
+}
+
 .box{
+    text-align: center;
     border: solid black 1px;
     display: inline-block;
     margin: 20px;
     color: #fff;
     background-color: #111111;
+    padding: 20px;
+    line-height: 1.5;
 }
+
+.image-container{
+    font-size: 18px;
+    border: solid 1px green; 
+    width: 60px;
+    position: relative;
+    left: 50%;
+    top: -40px;
+    transform: translate(-50%);
+}
+
+.two-columns{
+    display: grid;
+    border: red solid 1px;
+    font-size: 18px;
+    line-height: 1.5;
+    color: white;
+    background-color: #111111;
+    margin-top: 150px;
+}
+
+@media screen and (min-width: 821px){
+    .two-columns{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.column1{
+    display: inline-block;
+}
+
+/*when u translate for eg y by 30px
+transfrom; translateY(30px);
+it will go down 30px but will leave 30 px space  at the top
+without concern for content within
+so be sure to use 
+margin-top:30px;
+*/
+.emptybox{
+    width: 200px;
+    height: 200px;
+    background-color:  #FF7700; 
+    transform: translateY(-150px);
+  }
+
+.history-txt{
+    padding: 30px;
+}
+
+.history-intro p{
+    color: #FF7700;
+}
+
+.img-wrapper{   
+    transform: translateY(-320px);
+    padding:10px;
+}
+
+.boxwithtext{
+    border: #FF7700 2px solid;
+    color: #fff;
+    background-color: #FF7700;
+    text-align: center;
+    display: inline-block;
+    padding: 40px 30px 30px;
+    position: absolute;
+    transform: translate(475px,-450px);
+}
+
+.news{
+    margin-bottom: 150px;
+}
+
+.newsheader{
+    text-align: center;
+    border: blue solid;
+}
+
+.newsheader p{
+    color: #FF7700;
+}
+
+.newsimg{
+    display: flex;
+    gap: 20px;
+}
+
+.org-bgnews{
+    background-color: #FF7700;
+    color: #fefefe;
+    display: inline-block;
+    font-size: 12.6px;
+    padding: 5px;
+}
+
+.newstxt{
+    background-color: antiquewhite;
+}
+
+.newstxt:hover{
+    color: #fefefe;
+    background-color: #111111;
+}
+
+.quotes{
+    border: solid 10px red;
+    color: #fefefe;
+    background-color:#111111;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    /* padding: 20px; */
+}
+
+.quotes1{
+    border: solid 10px red;
+    color: #fefefe;
+    background-color:#111111;
+    display: flex;
+    justify-content: space-between;
+    /* padding: 20px; */   
+}
+
+.quotes h2{
+    border: solid 1px red;
+}
+
+/* .email{
+    background-color: #1c1c1c;
+    padding: 10px;
+} */
+
+.quotesb{
+    border: solid 1px red;
+    display: flex;
+    /* width: 500px; */
+    gap: 10px;
+    align-items: center;
+}
+.quotesb input{
+    padding: 10px;
+    background-color: #1c1c1c;
+    color: white;
+    border: none;
+    width: 400px;
+   
+}
+
+.quotesb p{
+    font-size: 14px;;
+}
+
 
 .Bottom{
     display: flex;
@@ -142,15 +427,6 @@ img{
     align-items: center;
     justify-content: space-around;
     border: solid pink 1px;
-}
-
-.image-container{
-    border: solid 1px green; 
-    width: 60px;
-    position: relative;
-    left: 50%;
-    top: -30px;
-    transform: translate(-50%);
 }
 
 
@@ -164,6 +440,21 @@ img{
 
 .Bottom i{
     color: #fff;
+}
+
+.Bottom ul li:hover{
+    color: #FF7700;
+    cursor: pointer;
+}
+
+.Bottom a{
+    border: solid #FF7700 1px;
+    padding: 5px;
+}
+
+.Bottom a:hover
+{
+    background-color: #FF7700;
 }
 
 footer{
